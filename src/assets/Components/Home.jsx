@@ -147,10 +147,10 @@ function Home() {
     </p>
     <p className="text-gray-700 text-sm sm:text-lg">📞 (+91) 9650881509</p>
     <div className="mt-4 flex justify-center md:justify-start space-x-4 sm:space-x-6">
-      <a href="https://facebook.com/rishabhgoel" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.facebook.com/share/1BTUVN8G2S/" target="_blank" rel="noopener noreferrer">
         <Facebook size={28} className="text-blue-600 hover:text-blue-800" />
       </a>
-      <a href="https://instagram.com/rishabhgoel" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/goel_bhaiji?utm_source=qr&igsh=MTdmdTJseXdsbGV2cg==" target="_blank" rel="noopener noreferrer">
         <Instagram size={28} className="text-pink-600 hover:text-pink-800" />
       </a>
     </div>
