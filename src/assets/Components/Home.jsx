@@ -57,7 +57,7 @@ function Home() {
         </span>
       ))}
 
-      <div className="relative text-center mt-30 md:mt-50 z-10">
+      <div className="relative text-center mt-50 z-10">
         <h2 className="text-4xl md:text-7xl font-extrabold text-orange-700 mb-10 font-serif">
           What is Numerology?
         </h2>
@@ -67,7 +67,7 @@ function Home() {
         </p>
       </div>
 
-      <div className="relative mt-20 md:mt-50 flex flex-col space-y-20 z-10">
+      <div className="relative mt-40 md:mt-50 flex flex-col space-y-20 z-10">
         <div className="text-left flex flex-col gap-4 max-w-3xl">
           <h3 className="text-4xl font-bold text-orange-600">Personal Growth & Self-Discovery</h3>
           <p className="text-2xl text-gray-700">
@@ -102,7 +102,7 @@ function Home() {
       </div>
       
       {/* Features Section */}
-      <div className="relative mt-24 bg-white shadow-lg rounded-xl p-6 md:p-12 text-center z-10 mx-4 sm:mx-6 lg:mx-10">
+      <div className="relative ml-0 w-full mt-24 bg-white shadow-lg rounded-xl p-6 md:p-12 text-center z-10 mx-4 sm:mx-6 lg:mx-10">
   <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold text-orange-700">
     Explore Our Features
   </h3>
@@ -129,7 +129,7 @@ function Home() {
       </div>
       
       {/* Numerologist Section */}
-      <div className="relative mt-24 flex flex-col md:flex-row items-center bg-white shadow-xl rounded-xl overflow-hidden w-full max-w-screen-lg mx-auto z-10 p-4 sm:p-6 md:p-10">
+      <div className="relative mt-10 mx-0 w-full flex flex-col md:flex-row items-center bg-white shadow-xl rounded-xl overflow-hidden max-w-screen-lg mx-auto z-10 p-4 sm:p-6 md:p-10">
   <img 
     src="/images/Profile.jpg" 
     alt="Rishabh Goel" 
