@@ -43,7 +43,8 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative px-20 py-10 bg-gray-100 min-h-screen overflow-hidden">
+    <div className="relative px-10 py-10 bg-gray-50 min-h-screen overflow-hidden">
+      {/* Floating Random Numbers */}
       {randomNumbers.map((item, index) => (
         <span
           key={index}
@@ -57,128 +58,109 @@ function Home() {
         </span>
       ))}
 
-<div className="relative text-center mt-40 z-10 overflow-hidden rounded-xl">
-    <h2 className="text-5xl md:text-7xl font-extrabold text-orange-700 mb-10 font-serif">
-      What is Numerology?
-    </h2>
-    <p className="md:text-4xl text-3xl text-black-100 max-w-4xl mx-auto font-normal leading-relaxed">
-      Numerology is the study of numbers and their connection to people's lives. 
-      It offers deep insights into personality, relationships, career paths, and personal growth.
-    </p>
-</div>
-
-
-
-      <div className="relative mt-40 md:mt-50 flex flex-col space-y-20 z-10">
-
-  {/* Personal Growth & Self-Discovery */}
-  <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 max-w-4xl">
-    <img src="/images/1.jpg" alt="Personal Growth" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
-    <div className="text-left">
-      <h3 className="text-4xl font-bold text-orange-600">Personal Growth & Self-Discovery</h3>
-      <p className="text-2xl text-gray-700 mt-5">
-        Numerology helps individuals uncover their strengths, weaknesses, and life purpose, 
-        guiding them toward personal transformation.
-      </p>
-    </div>
-  </div>
-
-  {/* Career & Business Success (Image on Right) */}
-  <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12 max-w-4xl self-end">
-    <img src="/images/2.jpg" alt="Career Success" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
-    <div className="text-right">
-      <h3 className="text-4xl font-bold text-orange-600">Career & Business Success</h3>
-      <p className="text-2xl text-gray-700 mt-5">
-        Understanding numerology can help in choosing the right career path, 
-        optimizing business decisions, and improving financial stability.
-      </p>
-    </div>
-  </div>
-
-  {/* Relationships & Compatibility */}
-  <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 max-w-4xl">
-    <img src="/images/3.jpg" alt="Relationships" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
-    <div className="text-left">
-      <h3 className="text-4xl font-bold text-orange-600">Relationships & Compatibility</h3>
-      <p className="text-2xl text-gray-700 mt-5">
-        By analyzing life path numbers, numerology provides insights into compatibility, 
-        helping individuals build stronger and more fulfilling relationships.
-      </p>
-    </div>
-  </div>
-
-  {/* Spiritual Awakening & Intuition (Image on Right) */}
-  <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12 max-w-4xl self-end">
-    <img src="/images/4.jpg" alt="Spiritual Awakening" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
-    <div className="text-right">
-      <h3 className="text-4xl font-bold text-orange-600">Spiritual Awakening & Intuition</h3>
-      <p className="text-2xl text-gray-700 mt-5">
-        Many use numerology as a tool for spiritual growth, enhancing intuition, 
-        and aligning with their higher self.
-      </p>
-    </div>
-  </div>
-
-</div>
-
-
-      
-      {/* Features Section */}
-      <div className="relative ml-0 w-full mt-24 bg-white shadow-lg rounded-xl p-6 md:p-12 text-center z-10 mx-4 sm:mx-6 lg:mx-10">
-  <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold text-orange-700">
-    Explore Our Features
-  </h3>
-  <p className="text-lg sm:text-2xl md:text-3xl text-gray-700 mt-4 max-w-4xl mx-auto">
-    Our website provides powerful tools to explore numerology and understand its impact on your life.
-  </p>
-
-  <div className="mt-12 flex flex-col sm:flex-row justify-center gap-8 sm:gap-10 md:gap-16">
-    <div className="w-full sm:w-1/2 md:w-1/3 p-6 sm:p-8 bg-orange-100 rounded-lg shadow-md">
-      <h4 className="text-2xl sm:text-3xl font-bold text-orange-700">📊 Study Numerology</h4>
-      <p className="text-lg sm:text-2xl text-gray-700 mt-4">
-        Learn about different numerology charts, including Master numbers, destiny numbers, and more.
-      </p>
-    </div>
-
-    <div className="w-full sm:w-1/2 md:w-1/3 p-6 sm:p-8 bg-orange-100 rounded-lg shadow-md">
-      <h4 className="text-2xl sm:text-3xl font-bold text-orange-700">🔢 Numerology Calculator</h4>
-      <p className="text-lg sm:text-2xl text-gray-700 mt-4">
-        Calculate your life path number, expression number, and other key numerology numbers.
-      </p>
-    </div>
-  </div>
-
+      {/* Hero Section */}
+      <div className="relative text-center mt-40 z-10 p-10 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl shadow-lg">
+        <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-8 font-serif drop-shadow-lg">
+          What is Numerology?
+        </h2>
+        <p className="md:text-4xl text-3xl text-white max-w-4xl mx-auto font-light leading-relaxed">
+          Numerology is the study of numbers and their connection to people's lives. 
+          It offers deep insights into personality, relationships, career paths, and personal growth.
+        </p>
       </div>
-      
-      {/* Numerologist Section */}
-      <div className="relative mt-10 mx-0 w-full flex flex-col md:flex-row items-center bg-white shadow-xl rounded-xl overflow-hidden max-w-screen-lg mx-auto z-10 p-4 sm:p-6 md:p-10">
-  <img 
-    src="/images/Profile.jpg" 
-    alt="Rishabh Goel" 
-    className="w-36 sm:w-48 md:w-64 h-36 sm:h-48 md:h-64 rounded-full shadow-lg"
-  />
-  <div className="w-full md:w-2/3 p-4 sm:p-6 text-center md:text-left">
-    <h3 className="text-xl sm:text-2xl md:text-4xl font-bold text-orange-700">
-      Meet Your Numerologist
-    </h3>
-    <p className="text-base sm:text-lg md:text-2xl text-gray-600 mt-3 sm:mt-4">
-      Rishabh Goel, a professional numerologist, has helped countless individuals understand their life paths and harness the power of numbers.
-    </p>
-    <p className="text-gray-700 mt-3 sm:mt-4 md:mt-6 text-sm sm:text-lg">
-      📍 C1, Yamuna Vihar, Delhi-110053
-    </p>
-    <p className="text-gray-700 text-sm sm:text-lg">📞 (+91) 9650881509</p>
-    <div className="mt-4 flex justify-center md:justify-start space-x-4 sm:space-x-6">
-      <a href="https://www.facebook.com/share/1BTUVN8G2S/" target="_blank" rel="noopener noreferrer">
-        <Facebook size={28} className="text-blue-600 hover:text-blue-800" />
-      </a>
-      <a href="https://www.instagram.com/goel_bhaiji?utm_source=qr&igsh=MTdmdTJseXdsbGV2cg==" target="_blank" rel="noopener noreferrer">
-        <Instagram size={28} className="text-pink-600 hover:text-pink-800" />
-      </a>
-    </div>
-  </div>
-</div>
 
+      {/* Key Numerology Benefits Section */}
+      <div className="relative mt-40 grid gap-16 max-w-6xl mx-auto z-10">
+        {[
+          {
+            title: "Personal Growth & Self-Discovery",
+            text: "Numerology helps individuals uncover their strengths, weaknesses, and life purpose, guiding them toward personal transformation.",
+            img: "/images/1.jpg",
+            align: "left",
+          },
+          {
+            title: "Career & Business Success",
+            text: "Understanding numerology can help in choosing the right career path, optimizing business decisions, and improving financial stability.",
+            img: "/images/2.jpg",
+            align: "right",
+          },
+          {
+            title: "Relationships & Compatibility",
+            text: "By analyzing life path numbers, numerology provides insights into compatibility, helping individuals build stronger and more fulfilling relationships.",
+            img: "/images/3.jpg",
+            align: "left",
+          },
+          {
+            title: "Spiritual Awakening & Intuition",
+            text: "Many use numerology as a tool for spiritual growth, enhancing intuition, and aligning with their higher self.",
+            img: "/images/4.jpg",
+            align: "right",
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className={`flex flex-col md:flex-row ${
+              item.align === "right" ? "md:flex-row-reverse" : ""
+            } items-center gap-8 md:gap-12`}
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-40 md:w-48 h-40 md:h-48 rounded-full shadow-xl transition-transform transform hover:scale-105"
+            />
+            <div className={item.align === "right" ? "text-right" : "text-left"}>
+              <h3 className="text-4xl font-bold text-orange-600">{item.title}</h3>
+              <p className="text-2xl text-gray-700 mt-5">{item.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Features Section */}
+      <div className="relative mt-24 bg-white shadow-lg rounded-xl p-10 md:p-16 text-center z-10 max-w-5xl mx-auto">
+        <h3 className="text-4xl font-bold text-orange-700">Explore Our Features</h3>
+        <p className="text-2xl text-gray-700 mt-4 max-w-4xl mx-auto">
+          Our website provides powerful tools to explore numerology and understand its impact on your life.
+        </p>
+
+        <div className="mt-12 flex flex-col md:flex-row justify-center gap-10">
+          {[
+            {
+              title: "📊 Study Numerology",
+              text: "Learn about different numerology charts, including Master numbers, destiny numbers, and more.",
+            },
+            {
+              title: "🔢 Numerology Calculator",
+              text: "Calculate your life path number, expression number, and other key numerology numbers.",
+            },
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className="w-full md:w-1/2 p-8 bg-orange-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            >
+              <h4 className="text-3xl font-bold text-orange-700">{feature.title}</h4>
+              <p className="text-xl text-gray-700 mt-4">{feature.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Numerologist Profile Section */}
+      <div className="relative mt-24 mx-auto bg-white shadow-2xl rounded-xl overflow-hidden max-w-5xl flex flex-col md:flex-row items-center p-10 z-10">
+        <img
+          src="/images/Profile.jpg"
+          alt="Rishabh Goel"
+          className="w-48 h-48 rounded-full shadow-lg"
+        />
+        <div className="w-full md:w-2/3 p-6 text-center md:text-left">
+          <h3 className="text-4xl font-bold text-orange-700">Meet Your Numerologist</h3>
+          <p className="text-2xl text-gray-600 mt-4">
+            Rishabh Goel, a professional numerologist, has helped countless individuals understand their life paths and harness the power of numbers.
+          </p>
+          <p className="text-gray-700 mt-6 text-xl">📍 C1, Yamuna Vihar, Delhi-110053</p>
+          <p className="text-gray-700 text-xl">📞 (+91) 9650881509</p>
+        </div>
+      </div>
     </div>
   );
 }
