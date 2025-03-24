@@ -60,20 +60,23 @@ function Home() {
         </span>
       ))}
 
-      {/* Hero Section */}
-<div className="relative text-center mt-32 md:mt-40 z-10 p-10">
-  <h2 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 md:mb-8 font-serif drop-shadow-sm">
-    What is Numerology?
-  </h2>
-  <p className="md:text-3xl text-2xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
-    Numerology is the study of numbers and their connection to people's lives. It offers deep insights into personality, relationships, career paths, and personal growth.
-  </p>
-  <div className="w-24 h-1 bg-gray-300 mx-auto mt-6"></div>
+    {/* Hero Section */}
+<div className="flex items-center justify-center mt-40">
+  <div className="p-10 relative flex flex-col items-center justify-center text-center bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl shadow-xl w-full md:w-2/3">
+    <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-6 md:mb-8 font-serif drop-shadow-lg">
+      What is Numerology?
+    </h2>
+    <p className="md:text-3xl text-2xl text-white max-w-4xl mx-auto font-light leading-relaxed">
+      Numerology is the study of numbers and their connection to people's lives. It offers deep insights into personality, relationships, career paths, and personal growth.
+    </p>
+  </div>
 </div>
 
 
+
+
       {/* Key Numerology Benefits Section */}
-      <div className="relative mt-24 md:mt-32 grid gap-12 md:gap-16 max-w-6xl mx-auto z-10">
+      <div className="relative mt-20 md:mt-32 grid gap-12 md:gap-16 max-w-6xl mx-auto z-10">
         {[
           {
             title: "Personal Growth & Self-Discovery",
@@ -104,7 +107,7 @@ function Home() {
             key={index}
             className={`flex flex-col md:flex-row ${
               item.align === "right" ? "md:flex-row-reverse" : ""
-            } items-center gap-8 md:gap-12 bg-white p-8 md:p-12 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300`}
+            } items-center gap-8 md:gap-12 bg-white p-8 md:p-12 rounded-2xl shadow-xl`}
           >
             <img
               src={item.img}
@@ -160,7 +163,7 @@ function Home() {
       </div>
 
       {/* Numerologist Profile Section */}
-      <div className="relative mt-24 mx-auto bg-gradient-to-r from-orange-500 to-red-600 shadow-2xl rounded-xl overflow-hidden max-w-5xl flex flex-col md:flex-row items-center p-10 z-10">
+      <div className="relative mt-10 mx-auto bg-gradient-to-r from-orange-500 to-red-600 shadow-2xl rounded-xl overflow-hidden max-w-5xl flex flex-col md:flex-row items-center p-10 z-10">
         <img
           src="/images/Profile.jpg"
           alt="Rishabh Goel"
