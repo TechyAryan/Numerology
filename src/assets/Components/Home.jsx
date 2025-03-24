@@ -47,7 +47,7 @@ function Home() {
       {randomNumbers.map((item, index) => (
         <span
           key={index}
-          className="absolute text-gray-300 text-9xl font-bold pointer-events-none"
+          className="absolute text-orange-200 text-9xl font-bold pointer-events-none"
           style={{
             top: `${item.top}%`,
             left: `${item.left}%`,
@@ -57,49 +57,71 @@ function Home() {
         </span>
       ))}
 
-      <div className="relative text-center mt-50 z-10">
-        <h2 className="text-4xl md:text-7xl font-extrabold text-orange-700 mb-10 font-serif">
-          What is Numerology?
-        </h2>
-        <p className="text-2xl md:text-4xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
-          Numerology is the study of numbers and their connection to people's lives. 
-          It offers deep insights into personality, relationships, career paths, and personal growth.
-        </p>
-      </div>
+<div className="relative text-center mt-40 z-10 overflow-hidden rounded-xl">
+    <h2 className="text-4xl md:text-7xl font-extrabold text-orange-700 mb-10 font-serif">
+      What is Numerology?
+    </h2>
+    <p className="md:text-4xl text-2xl text-black-100 max-w-4xl mx-auto font-normal leading-relaxed">
+      Numerology is the study of numbers and their connection to people's lives. 
+      It offers deep insights into personality, relationships, career paths, and personal growth.
+    </p>
+</div>
 
-      <div className="relative mt-40 md:mt-50 flex flex-col space-y-20 z-10">
-        <div className="text-left flex flex-col gap-4 max-w-3xl">
-          <h3 className="text-4xl font-bold text-orange-600">Personal Growth & Self-Discovery</h3>
-          <p className="text-2xl text-gray-700">
-            Numerology helps individuals uncover their strengths, weaknesses, and life purpose, 
-            guiding them toward personal transformation.
-          </p>
-        </div>
-      
-        <div className="text-right flex flex-col gap-4 max-w-3xl self-end">
-          <h3 className="text-4xl font-bold text-orange-600">Career & Business Success</h3>
-          <p className="text-2xl text-gray-700">
-            Understanding numerology can help in choosing the right career path, 
-            optimizing business decisions, and improving financial stability.
-          </p>
-        </div>
-      
-        <div className="text-left flex flex-col gap-4 max-w-3xl">
-          <h3 className="text-4xl font-bold text-orange-600">Relationships & Compatibility</h3>
-          <p className="text-2xl text-gray-700">
-            By analyzing life path numbers, numerology provides insights into compatibility, 
-            helping individuals build stronger and more fulfilling relationships.
-          </p>
-        </div>
-      
-        <div className="text-right flex flex-col gap-4 max-w-3xl self-end">
-          <h3 className="text-4xl font-bold text-orange-600">Spiritual Awakening & Intuition</h3>
-          <p className="text-2xl text-gray-700">
-            Many use numerology as a tool for spiritual growth, enhancing intuition, 
-            and aligning with their higher self.
-          </p>
-        </div>
-      </div>
+
+
+      <div className="relative mt-40 md:mt-50 flex flex-col space-y-16 z-10">
+
+  {/* Personal Growth & Self-Discovery */}
+  <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 max-w-4xl">
+    <img src="/images/1.jpg" alt="Personal Growth" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
+    <div className="text-left">
+      <h3 className="text-3xl md:text-4xl font-bold text-orange-600">Personal Growth & Self-Discovery</h3>
+      <p className="text-lg md:text-2xl text-gray-700 mt-2">
+        Numerology helps individuals uncover their strengths, weaknesses, and life purpose, 
+        guiding them toward personal transformation.
+      </p>
+    </div>
+  </div>
+
+  {/* Career & Business Success (Image on Right) */}
+  <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12 max-w-4xl self-end">
+    <img src="/images/2.jpg" alt="Career Success" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
+    <div className="text-right">
+      <h3 className="text-3xl md:text-4xl font-bold text-orange-600">Career & Business Success</h3>
+      <p className="text-lg md:text-2xl text-gray-700 mt-2">
+        Understanding numerology can help in choosing the right career path, 
+        optimizing business decisions, and improving financial stability.
+      </p>
+    </div>
+  </div>
+
+  {/* Relationships & Compatibility */}
+  <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 max-w-4xl">
+    <img src="/images/3.jpg" alt="Relationships" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
+    <div className="text-left">
+      <h3 className="text-3xl md:text-4xl font-bold text-orange-600">Relationships & Compatibility</h3>
+      <p className="text-lg md:text-2xl text-gray-700 mt-2">
+        By analyzing life path numbers, numerology provides insights into compatibility, 
+        helping individuals build stronger and more fulfilling relationships.
+      </p>
+    </div>
+  </div>
+
+  {/* Spiritual Awakening & Intuition (Image on Right) */}
+  <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12 max-w-4xl self-end">
+    <img src="/images/4.jpg" alt="Spiritual Awakening" className="w-32 md:w-40 h-32 md:h-40 rounded-full shadow-lg" />
+    <div className="text-right">
+      <h3 className="text-3xl md:text-4xl font-bold text-orange-600">Spiritual Awakening & Intuition</h3>
+      <p className="text-lg md:text-2xl text-gray-700 mt-2">
+        Many use numerology as a tool for spiritual growth, enhancing intuition, 
+        and aligning with their higher self.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
       
       {/* Features Section */}
       <div className="relative ml-0 w-full mt-24 bg-white shadow-lg rounded-xl p-6 md:p-12 text-center z-10 mx-4 sm:mx-6 lg:mx-10">
